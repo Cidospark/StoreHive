@@ -50,7 +50,7 @@ namespace StoreHive.API
             builder.AddRoleManager<RoleManager<Role>>(); // user identity to manage role
             builder.AddSignInManager<SignInManager<User>>();
 
-
+            services.AddCors();
             //------------------- authentication settings ----------------------------------//
             
 
@@ -69,7 +69,9 @@ namespace StoreHive.API
             {
             }
 
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             Seed.Seeder(cntxt, userManager, roleManager);
+            app.UseAuthentication();  // because identity is implemented
             app.UseMvc();
         }
     }
