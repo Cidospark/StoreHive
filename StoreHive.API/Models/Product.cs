@@ -11,6 +11,7 @@ namespace StoreHive.API.Models
         public int CategoryId { get; set; }
         public Store Store { get; set; }
         public int StoreId { get; set; }
+        public string DetailedDescription { get; set; }
         public ICollection<ProductDetail> ProductDetails { get; set; }
     }
 }

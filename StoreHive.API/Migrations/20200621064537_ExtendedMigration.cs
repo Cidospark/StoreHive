@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace StoreHive.API.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class ExtendedMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -47,7 +47,9 @@ namespace StoreHive.API.Migrations
                     Street = table.Column<string>(nullable: true),
                     City = table.Column<string>(nullable: true),
                     Country = table.Column<string>(nullable: true),
-                    DateRegistered = table.Column<DateTime>(nullable: false)
+                    DateRegistered = table.Column<DateTime>(nullable: false),
+                    PhotoUrl = table.Column<string>(nullable: true),
+                    IsPremiumUser = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -185,6 +187,9 @@ namespace StoreHive.API.Migrations
                     Street = table.Column<string>(nullable: true),
                     City = table.Column<string>(nullable: true),
                     Country = table.Column<string>(nullable: true),
+                    HasPermit = table.Column<bool>(nullable: false),
+                    ReferalLink = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
                     DateRegistered = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
@@ -207,7 +212,8 @@ namespace StoreHive.API.Migrations
                     Name = table.Column<string>(nullable: true),
                     Brand = table.Column<string>(nullable: true),
                     CategoryId = table.Column<int>(nullable: false),
-                    StoreId = table.Column<int>(nullable: false)
+                    StoreId = table.Column<int>(nullable: false),
+                    DetailedDescription = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

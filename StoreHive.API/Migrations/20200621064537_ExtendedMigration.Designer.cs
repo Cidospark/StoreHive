@@ -9,8 +9,8 @@ using StoreHive.API.Data;
 namespace StoreHive.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200621043701_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20200621064537_ExtendedMigration")]
+    partial class ExtendedMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -106,6 +106,8 @@ namespace StoreHive.API.Migrations
                     b.Property<string>("Brand");
 
                     b.Property<int>("CategoryId");
+
+                    b.Property<string>("DetailedDescription");
 
                     b.Property<string>("Name");
 
@@ -228,11 +230,17 @@ namespace StoreHive.API.Migrations
 
                     b.Property<DateTime>("DateRegistered");
 
+                    b.Property<string>("Description");
+
+                    b.Property<bool>("HasPermit");
+
                     b.Property<string>("Logo");
 
                     b.Property<string>("Name");
 
                     b.Property<int>("OwnerId");
+
+                    b.Property<string>("ReferalLink");
 
                     b.Property<string>("Street");
 
@@ -268,6 +276,8 @@ namespace StoreHive.API.Migrations
 
                     b.Property<int>("Gender");
 
+                    b.Property<bool>("IsPremiumUser");
+
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
@@ -283,6 +293,8 @@ namespace StoreHive.API.Migrations
                     b.Property<string>("PhoneNumber");
 
                     b.Property<bool>("PhoneNumberConfirmed");
+
+                    b.Property<string>("PhotoUrl");
 
                     b.Property<string>("SecurityStamp");
 

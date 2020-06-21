@@ -13,7 +13,10 @@ namespace StoreHive.API.Models
         public string Street { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public DateTime DateRegistered { get; set; }
+        public bool HasPermit { get; set; }
+        public string ReferalLink { get; set; }
+        public string Description { get; set; }
+        public DateTime DateRegistered { get; set; } = DateTime.Now;
         public ICollection<Product> Products { get; set; }
         public ICollection<Sales> Sales { get; set; }
 

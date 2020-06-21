@@ -12,6 +12,8 @@ namespace StoreHive.API.Models
         public string City { get; set; }
         public string Country { get; set; }
         public DateTime DateRegistered { get; set; }
+        public string PhotoUrl { get; set; }
+        public bool IsPremiumUser { get; set; } 
         public virtual ICollection<UserRole> UserRoles { get; set; }
         public ICollection<Store> Stores { get; set; }
 

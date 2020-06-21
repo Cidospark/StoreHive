@@ -1,0 +1,268 @@
+[
+    {
+      "FullName": "Lola",
+      "Gender": "female",
+      "Password": "password",
+      "UserName": "lola@sample.com",
+      "Email": "lola@sample.com",
+      "DateRegistered": "2017-08-02",
+      "IsPremiumUser": false,
+      "City": "Efland",
+      "Country": "Burundi",
+      "PhotoUrl":  "https://randomuser.me/api/portraits/women/3.jpg",
+      "Stores": [
+        {
+          "Name": "Lola's Electronics",
+          "Description": "Buy the best quality electronics for less. Cheap and very affordable.",
+          "City": "Efland",
+          "Country": "Burundi",
+          "ReferalLink": "http://localhost:5000/store/lola",
+          "HasPermit": true,
+          "Products": [
+            {
+              "Name": "FinePix Pro2 3D Camera",
+              "CategoryId": 6,
+              "Brand": "Canon zoom-lens Pro2 3D Camera",
+              "ProductDetails": [
+                {
+                  "Size": "medium",
+                  "Color":"Black",
+                  "UnitQuantity": 50,
+                  "UnitPrice": 14000,
+                  "PackagePrice":14000,
+                  "PackageQuantity":50,
+                  "PhotoUrls": [
+                    {"PhotoUrl":"camera.jpg"}
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "FullName": "Dorothy",
+      "Gender": "female",
+      "Password": "password",
+      "UserName": "dorothy@sample.com",
+      "Email": "dorothy@sample.com",
+      "DateRegistered": "2017-01-21",
+      "IsPremiumUser": false,
+      "City": "Deseret",
+      "Country": "Mongolia",
+      "PhotoUrl": "https://randomuser.me/api/portraits/women/49.jpg"
+    },
+    {
+      "FullName": "Reba",
+      "Gender": "female",
+      "Password": "password",
+      "UserName": "reba@sample.com",
+      "Email": "reba@sample.com",
+      "DateRegistered": "2017-06-24",
+      "IsPremiumUser": false,
+      "City": "Hannasville",
+      "Country": "Poland",
+      "PhotoUrl": "https://randomuser.me/api/portraits/women/24.jpg",
+      "Stores": [
+        {
+          "Name": "Electronic Giants",
+          "Description": "We are the giants in the business, assorted electronics, gadgets etc",
+          "City": "Hannasville",
+          "Country": "Poland",
+          "ReferalLink": "http://localhost:5000/store/reba",
+          "HasPermit": true,
+          "Products": [
+            {
+              "Name": "EXP Portable Hard Drive",
+              "CategoryId": 6,
+              "Brand": "1 TerabyteEXP Portable Hard Drive",
+              "ProductDetails": [
+                {
+                  "Size": "Portable",
+                  "Color": "Black",
+                  "UnitQuantity": 50,
+                  "UnitPrice": 10000,
+                  "PackagePrice": 10000,
+                  "PackageQuantity": 50,
+                  "PhotoUrls": [
+                    {
+                      "PhotoUrl": "external-hard-drive.jpg"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Name": "Laptop",
+              "CategoryId": 6,
+              "Brand": "Hp 655 16' inch screen laptop. Windos 10",
+              "ProductDetails": [
+                {
+                  "Size": "16 inches",
+                  "Color": "Silver",
+                  "UnitQuantity": 10,
+                  "UnitPrice": 300000,
+                  "PackagePrice": 300000,
+                  "PackageQuantity": 10,
+                  "PhotoUrls": [
+                    {
+                      "PhotoUrl": "laptop.jpg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "FullName": "Annmarie",
+      "Gender": "female",
+      "Password": "password",
+      "UserName": "annmarie@sample.com",
+      "Email": "annmarie@sample.com",
+      "DateRegistered": "2017-07-17",
+      "IsPremiumUser": false,
+      "City": "Sutton",
+      "Country": "Bouvet Island",
+      "PhotoUrl":"https://randomuser.me/api/portraits/women/74.jpg"
+    },
+    {
+      "FullName": "Ashley",
+      "Gender": "female",
+      "Password": "password",
+      "UserName": "ashley@sample.com",
+      "Email": "ashley@sample.com",
+      "DateRegistered": "2017-03-25",
+      "IsPremiumUser": false,
+      "City": "Bayview",
+      "Country": "Zambia",
+      "PhotoUrl": "https://randomuser.me/api/portraits/women/33.jpg"
+    },
+    {
+      "FullName": "Roy",
+      "Gender": "male",
+      "Password": "password",
+      "UserName": "roy@sample.com",
+      "Email": "roy@sample.com",
+      "DateRegistered": "2017-08-03",
+      "IsPremiumUser": false,
+      "City": "Davenport",
+      "Country": "Tuvalu",
+      "PhotoUrl": "https://randomuser.me/api/portraits/men/90.jpg"      
+    },
+    {
+      "FullName": "Duke",
+      "Gender": "male",
+      "Password": "password",
+      "UserName": "duke@sample.com",
+      "Email": "duke@sample.com",
+      "DateRegistered": "2017-07-07",
+      "IsPremiumUser": false,
+      "City": "Inkerman",
+      "Country": "Canada",
+      "PhotoUrl": "https://randomuser.me/api/portraits/men/96.jpg",
+      "Stores": [
+        {
+          "Name": "Pharmacy",
+          "Description": "Whole sellers, and merchants of quality drugs",
+          "City": "Inkerman",
+          "Country": "Canada",
+          "ReferalLink": "http://localhost:5000/store/duke",
+          "HasPermit": true,
+          "Products": [
+            {
+              "Name": "Alphatesto",
+              "CategoryId": 10,
+              "Brand": "Alphatesto BoostX dietery suppliment",
+              "ProductDetails": [
+                {
+                  "Size": "medium",
+                  "Color": "None",
+                  "UnitQuantity": 150,
+                  "UnitPrice": 2000,
+                  "PackagePrice": 300000,
+                  "PackageQuantity": 15,
+                  "PhotoUrls": [
+                    {
+                      "PhotoUrl": "Alphatesto.png"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "FullName": "Lloyd",
+      "Gender": "male",
+      "Password": "password",
+      "UserName": "lloyd@sample.com",
+      "Email": "lloyd@sample.com",
+      "DateRegistered": "2017-08-22",
+      "IsPremiumUser": false,
+      "City": "Loma",
+      "Country": "Paraguay",
+      "PhotoUrl":"https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "FullName": "Larsen",
+      "Gender": "male",
+      "Password": "password",
+      "UserName": "larsen@sample.com",
+      "Email": "larsen@sample.com",
+      "DateRegistered": "2017-02-17",
+      "IsPremiumUser": false,
+      "City": "Bynum",
+      "Country": "Pakistan",
+      "PhotoUrl": "https://randomuser.me/api/portraits/men/76.jpg"
+    },
+    {
+      "FullName": "Simon",
+      "Gender": "male",
+      "Password": "password",
+      "UserName": "simon@sample.com",
+      "Email": "simon@sample.com",
+      "DateRegistered": "2017-06-27",
+      "IsPremiumUser": false,
+      "City": "Cavalero",
+      "Country": "Viet Nam",
+      "PhotoUrl":"https://randomuser.me/api/portraits/men/14.jpg",
+      "Stores": [
+        {
+          "Name": "Fashion Launge",
+          "Description": "Buy quality jeweries, shoes, cloths etc",
+          "City": "Cavalero",
+          "Country": "Viet Nam",
+          "ReferalLink": "http://localhost:5000/store/simon",
+          "HasPermit": true,
+          "Products": [
+            {
+              "Name": "Watch",
+              "CategoryId": 5,
+              "Brand": "Golded shiny watch",
+              "ProductDetails": [
+                {
+                  "Size": "Portable",
+                  "Color": "Gold",
+                  "UnitQuantity": 50,
+                  "UnitPrice": 10000,
+                  "PackagePrice": 10000,
+                  "PackageQuantity": 50,
+                  "PhotoUrls": [
+                    {
+                      "PhotoUrl": "watch.jpg"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+]

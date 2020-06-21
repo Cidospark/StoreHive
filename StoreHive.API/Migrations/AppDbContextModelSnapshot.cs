@@ -105,6 +105,8 @@ namespace StoreHive.API.Migrations
 
                     b.Property<int>("CategoryId");
 
+                    b.Property<string>("DetailedDescription");
+
                     b.Property<string>("Name");
 
                     b.Property<int>("StoreId");
@@ -226,11 +228,17 @@ namespace StoreHive.API.Migrations
 
                     b.Property<DateTime>("DateRegistered");
 
+                    b.Property<string>("Description");
+
+                    b.Property<bool>("HasPermit");
+
                     b.Property<string>("Logo");
 
                     b.Property<string>("Name");
 
                     b.Property<int>("OwnerId");
+
+                    b.Property<string>("ReferalLink");
 
                     b.Property<string>("Street");
 
@@ -266,6 +274,8 @@ namespace StoreHive.API.Migrations
 
                     b.Property<int>("Gender");
 
+                    b.Property<bool>("IsPremiumUser");
+
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
@@ -281,6 +291,8 @@ namespace StoreHive.API.Migrations
                     b.Property<string>("PhoneNumber");
 
                     b.Property<bool>("PhoneNumberConfirmed");
+
+                    b.Property<string>("PhotoUrl");
 
                     b.Property<string>("SecurityStamp");
 
