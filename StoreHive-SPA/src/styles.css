@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+
+
+body{
+    background-color: #ECF5FF;
+}
+
+a{
+    text-decoration: none;
+}
+h3{padding:0px; margin:0px;}
+.med-heading{
+    color: #7070f0;
+    margin-bottom:10px;
+}
+
+.wrap{
+    padding-top:50px;
+}
+
+.rl-col-11, .rl-col-10, .rl-col-9, .rl-col-8, .rl-col-7, .rl-col-6, .rl-col-5, .rl-col-4, .rl-col-3, .rl-col-2{
+    width:95%;
+}
+
+
+@media all and (min-width:768px) {
+    .row-layout{
+        display: flex;
+    }
+    .rl-col-11, .rl-col-10, .rl-col-9, .rl-col-8, .rl-col-7, .rl-col-6, .rl-col-5, .rl-col-4, .rl-col-3, .rl-col-2{
+        margin-left:1%;
+    }
+    .rl-col-2{width:9%;}
+    .rl-col-3{width:19%;}
+    .rl-col-4{width:29%;}
+    .rl-col-5{width:39%; }
+    .rl-col-6{ width:49%;}
+    .rl-col-7{width:59%;}
+    .rl-col-8{ width:69%;}
+    .rl-col-9{width:79%;}
+    .rl-col-10{ width:89%;}
+    .rl-col-11{ width:99%;}
+}
+@media all and (min-width:1200px) { 
+    .rl-col-3{width:9%;}
+    .rl-col-4{width:19%;}
+    .rl-col-5{width:29%; }
+    .rl-col-6{ width:49%;}
+    .rl-col-7{width:69%;}
+    .rl-col-8{ width:79%;}
+    .rl-col-9{width:89%;}
+    .rl-col-10{ width:100%;}
+}
