@@ -6,6 +6,8 @@ namespace StoreHive.API.Models
     {
         public int Id { get; set; }
         public string RecieptNumber { get; set; }
+        public Store Store { get; set; }
+        public int StoreId { get; set; }
         public User Customer { get; set; }
         public int CustomerId { get; set; }
         public Product Product { get; set; }

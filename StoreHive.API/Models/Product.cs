@@ -9,7 +9,7 @@ namespace StoreHive.API.Models
         public string Brand { get; set; }
         public Category Category { get; set; }
         public int CategoryId { get; set; }
-        public string Store { get; set; }
+        public Store Store { get; set; }
         public int StoreId { get; set; }
         public ICollection<ProductDetail> ProductDetails { get; set; }
     }

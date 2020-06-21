@@ -6,7 +6,7 @@ using StoreHive.API.Models;
 namespace StoreHive.API.Data
 {
     public class AppDbContext : IdentityDbContext<User, Role, int, IdentityUserClaim<int>, 
-            IdentityUserRole<int>, IdentityUserLogin<int>, IdentityRoleClaim<int>, IdentityUserToken<int>>
+            UserRole, IdentityUserLogin<int>, IdentityRoleClaim<int>, IdentityUserToken<int>>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options): base(options){}
         
