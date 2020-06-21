@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace StoreHive.API.Models
 {
-    public class User : IdentityUser
+    public class User : IdentityUser<int>
     {
         public string FullName { get; set; }
         public Gender Gender { get; set; }
@@ -12,6 +12,7 @@ namespace StoreHive.API.Models
         public string City { get; set; }
         public string Country { get; set; }
         public DateTime DateRegistered { get; set; }
+        public virtual ICollection<UserRole> UserRoles { get; set; }
         public ICollection<Store> Stores { get; set; }
 
     }

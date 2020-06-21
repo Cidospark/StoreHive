@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace StoreHive.API.Models
 {
     public class ProductDetail
@@ -11,7 +13,7 @@ namespace StoreHive.API.Models
         public int UnitQuantity { get; set; }
         public int PackagePrice { get; set; }
         public int PackageQuantity { get; set; }
-        public string PhotoUrl { get; set; }
+        public ICollection<ProductDetailPhotos> PhotoUrls { get; set; }
 
     }
 }
