@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   }
 
   loadStores() {
-    this.http.get('http://localhost:5000/api/marketplace/getStores').subscribe(response => {
+    this.http.get('http://localhost:5000/api/marketplace/getProducts').subscribe(response => {
       this.stores = response;
     }, error => {
       console.log(error);
