@@ -1,5 +1,10 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using StoreHive.API.Data;
+using StoreHive.API.Dtos;
 
 namespace StoreHive.API.Controllers
 {
@@ -7,16 +12,28 @@ namespace StoreHive.API.Controllers
     [ApiController]
     public class MarketplaceController : ControllerBase
     {
+        private readonly IProductRepository product;
+        private readonly IMapper mapper;
         private readonly AppDbContext context;
-        public MarketplaceController(AppDbContext context)
+        public MarketplaceController(IProductRepository product, IMapper mapper, AppDbContext context)
         {
             this.context = context;
+            this.mapper = mapper;
+            this.product = product;
         }
 
-        [HttpGet("getStores")]
-        public IActionResult getStores()
+        [HttpGet("getProducts")]
+        public async Task<IActionResult> GetProducts()
         {
-            return Ok(this.context.Stores);
+            var products = await this.product.GetAllProducts();           
+
+
+            if (products == null)
+                return NotFound("No records found!");
+
+            // map objects
+            var productToReturn = this.mapper.Map<IEnumerable<ProductDto>>(products);
+            return Ok(productToReturn);
         }
 
     }
