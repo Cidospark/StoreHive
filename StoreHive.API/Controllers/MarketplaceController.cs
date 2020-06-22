@@ -29,7 +29,7 @@ namespace StoreHive.API.Controllers
 
 
             if (products == null)
-                return BadRequest();
+                return NotFound("No records found!");
 
             // map objects
             var productToReturn = this.mapper.Map<IEnumerable<ProductDto>>(products);
